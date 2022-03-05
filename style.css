@@ -8,91 +8,111 @@
     --cor5: #FF9A26;
 }
 *{
-    padding: 0px;
     margin: 0px;
-    font-family: Arial, Helvetica, sans-serif;
 }
- header{
-     background-image: linear-gradient(var(--cor1), var(--cor3));
-     color: white;
-     max-height: 61.8vh;
-     vertical-align: middle;
-     text-shadow: 0px 0px 5px rgb(0, 0, 0);
- }
-
-div.fundovenn{
-    margin-top: -30px;
-    background-image: url(imagens/veninterno.png);
-    height: 100%;
-    width: 100%;
-    background-position: right;
+body{
+    font-family: 'Roboto Condensed', sans-serif;
+}
+header{
+    color: white;
+    padding: 5px;
+    min-height: 38.2vh;  /*o corte menor do número de ouro*/
+    background-image: linear-gradient(#060f6d, #3f4bca);
+}
+header div{
+    background-image: url(imagens/venntriplo.png);
     background-repeat: no-repeat;
     background-size: contain;
-    right: 100px;
-}
-.container{
-    /*border: 1px solid yellow;*/
-    max-width: 1100px;
-    margin: auto;
-}
-
-.headertitulos{
-    display: inline-block;
-    max-width: 61.8vw;
-    padding: 1vw;
-    max-height: 500px;
-    margin-left: 10px;
-    margin-top: 5vh;
-    vertical-align: middle;
-    /*border: 1px solid red;*/
-}
-header strong{
-    color: var(--cor5);
+    background-position: right;
+    min-height: 38.2vh;
 }
 header h1{
-     padding: 50px 0px 60px;
-     font-size: 10vmin;
- }
- header h2{
-    font-family: 'Roboto', sans-serif;
-    font-size: 20px;
- }
+    font-size: 5em;
+    padding: 50px 0px 10px 20px;
+}
+header h2{
+    font-size: 2em;
+    padding: 20px;
+    max-width: 70%;
+}
 
- nav{
-     background-color: var(--cor3);
-     padding-left: 30px;
- }
- nav p{
-     display: inline-block;
-     color: white;
-     padding: 3px;
-     background-color: var(--cor1);
-     margin: 3px 1px;
-     border-radius: 4px;
- }
- nav p:hover{
-    color: var(--cor5);
-    transition: 100ms;
-    margin: 1px 1px 3px 1px;
- }
- main{
-     width: 85%;
-     margin: auto;
- }
- main h1{
-     font-family: 'Roboto Condensed', sans-serif;
-     padding: 10px 0px;
-     font-size: 2.5em;
-     color: var(--cor1);
- }
- main p{
-     text-align: justify;
-     line-height: 1.5em;
-     font-family: 'Roboto', sans-serif;
-     font-size: 1.2em;
-     font-weight: 500;
- }
- main strong{
-     color: #DB5009;
-     font-weight: 700;
- }
+nav{
+    background-color: #3f4bca;
+    padding: 5px;
+}
+
+nav li{
+    display: inline;
+    padding: 3px;
+    background-color: #060f6d;
+    color: white;
+}
+
+nav li:hover{
+    text-decoration: underline;
+    color: #DB5009;
+}
+
+main{
+    font-size: 2em;
+}
+section{
+    display: inline-block;
+    width: 76%;
+    vertical-align: top;
+    margin: 5px 0px 0px 5px;
+}
+section p{
+    padding: 5px;
+}
+section ul{
+    margin-left: 10%;
+}
+
+section li{
+    padding: 5px;
+}
+section a{
+    text-decoration: none;
+    color: black;
+}
+
+section a:hover{
+    text-decoration: underline;
+}
+
+aside{
+    margin-top: 5px;
+    display: inline-block;
+    width: 20%;
+    padding: 5px;
+    background-color: grey;
+    border-radius: 5px;
+}
+aside h3{
+    color: white
+}
+aside h4{
+    color: white;
+    text-align: center;
+    padding: 3px;
+
+}
+aside img{
+    background-color: white;
+    max-width: 98%;
+    margin: auto;
+    border: 3px solid #DB5009;
+    border-radius: 98%;
+}
+aside p{
+    font-size: 18px;
+    text-align: justify;
+}
+footer{
+    background-color: grey;
+    margin-top: 5px;
+    padding: 5px;
+    text-align: center;
+    font-size: 0.75em;
+}
