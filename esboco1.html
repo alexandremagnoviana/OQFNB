@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width">
+		<title>Esboço</title>
+		<link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="style.css">
+	</head>
+	<body>
+		<section id='introducao'>
+			<h1>Esse não é a sua análise de ações comum.</h1>
+			<p>Se você acabou de chegar por aqui, a primeira coisa que deve saber é: esse site não é sobre análise de ações. Não espere encontrar aqui discussões sobre qualidades de empresas, tentativas de previsão de mercado ou cálculos para encontrar o "valor justo" de uma empresa. Nada disso.</p>
+			<p>Esse site é sobre <strong>análise quantitativa</strong>. Aqui nós não analisamos empresas, nós analisamos estratégias que analisam empresas.</p>
+			<p>Essas estratégias devem sempre ser claras, objetivas, reproduzíveis e testáveis em uma base de dados histórica e ferramentas de estatística devem ser usadas para analisar os dados. Apenas assim, usando o <strong>método científico</strong> pode-se diferencias estratégias que funcionam das que não funcionam, escolher um grau de risco que nos agrada, saber o que esperar do futuro e remover os nossos sentimentos e emoções das nossas escolhas.</p>
+		</section>
+		<section id='porque'>
+			<h1>Mas por que eu deveria usar a análise quantitativa?</h1>
+			<p>Essa é uma excelente pergunta. Há vários motivos que você pode achar por aqui e em outros lugares, mas vou tentar resumir os principais:
+			<h2>A análise qualitativa (essa que você usa) não funciona, nem para os experts.</h2>
+			<p>A maioria dos fundos de investimento gerida por profissionais do mercado financeiro, com dedicação exclusiva e acesso a informações, softwares e contatos que você provavelmente não tem, não consegue ganhar do índice do mercado. Esse fenômeno se repete em todos os principais países pesquisados, inclusive no Brasil. No momento que escrevo esse texto, <strong>86,04% dos fundos brasileiros tiveram um desempenho pior do que o índice</strong> nos últimos 10 anos. Dê uma olhada na informação mais atualizada aqui no site do <a href='https://www.spglobal.com/spdji/en/research-insights/spiva' target='_blank'>SPIVA</a>. Eu aposto que o cenário não mudou muito.</p>
+			<p>Para entender porque isso acontece devemos entender como se comporta o cérebro humano no mercado financeiro. Há toda uma área da psicologia e economia que estuda esses fenômenos, chamada neurofinanças e/ou economia comportamental. Se quiser saber um pouco mais sobre isso, dá uma olhada <a href='#'>aqui</a>.
+			<div class='destaque'>
+				<p>São essses os "experts" que escrevem os relatórios de mercado que você lê, que gravam os vídeos sobre determinada ação que você assiste ou que te cobram 2% a.a. para gerir seu capital.</p>
+			</div>
+			<h2>Existem características de uma ação que estão estatisticamente relacionadas com o desempenho futuro.</h2>
+			<p>Podemos criar "regras" de seleção de ações e ver como os nossos investimentos teriam se comportado caso tivéssemos comprado ações que tenham certa característica. Por exemplo, se organizarmos todo o universo de ações listadas nos EUA por L/P (lucro sobre preço) todo ano e dividi-lo em 10 carteiras teóricas, cada uma contendo 10% do universo, e rebalanceássemos todo ano a fim de manter sempre o L/P mais baixo em um extremo e mais alto em outro, teríamos os seguintes resultados:</p>
+			<p>Não é necessário ser muito inteligente para perceber uma correlação clara: quanto maior a razao lucro/preço, maior foi o desempenho daquele grupo de ações, com o grupo "mais barato" tendo um desempenho médio anual quase que o triplo do "mais caro". Para realmente ter noção do que essa diferença significa, <strong>$10000 investidos em 1964 no grupo de ações com maior L/P teriam virado $   em 2008, enquanto que os mesmos $10000 investidos nas ações com menor L/P teriam virado $    .</strong>. Esse tipo de análise mostra que faz sentido que nós compremos esse tipo de ação para ter uma chance maior de vencer do mercado.</p>
+			<p>Perceba a natureza estatística no cerne da análise quantitativa: embora não tenhamos certeza de que vamos ganhar do mercado todo ano (na verdade, podemos ter certeza de que não vamos) ou saibamos quais empresas de um certo grupo vão ter um desempenho acima da média, podemos afirmar que aquela "cesta" de ações, como um todo, tem uma maior CHANCE de ganhar do mercado; e quanto mais tempo a estratégia é usada, maiores as chances.</p>
+		</section>
+		<aside id='jogo'>
+			<h2>Imagina que alguém de propõe um <strong>jogo</strong></h1>
+			<h3>"Se o dado der 6, eu ganho. Se der qualquer outro número, você ganha"</h3>
+			<p>Se você tivesse certeza de que os dados não estão viciados ou algo dessa natureza, você aceitaria jogar esse jogo?
+			<p>Claro que sim.</p>
+			<p>Mas você espera ganhar TODAS as vezes?</p>
+			<p>Claro que não</p>
+			<p>Mesmo que a estatística esteja ao seu lado, ainda haverá jogadas que você não vai ganhar. Mas caso continue jogando, a probabilidade está ao seu favor e, no longo prazo, tudo indica que você sairá campeão</p>
+			<p>É exatamente esse tipo de jogo que a análise quantitativa joga.</p>
+		</aside>
+		<article>
+			<h1>Mas afinal, o que faz a análise quant?</h1>
+			<p>A análise quantitativa consiste em fazer vários estudos como esse exemplificado, identificar quais indicadores funcionam (com base em testes em base de dados históricas, os chamados <em>backtestes</em>) e como combiná-los para potencializar os resultados e minimizar os riscos. No fim, pretendemos ter um conjunto de regras claras e objetivas para selecionarações e que a implementação dessas regras seja independente de julgamento humano, criando um sistema de investimento mecanizado. Por exemplo:</p>
+			<ol>
+				<li>Organize todas as ações por L/P;
+				<li>Compre os 10% com maior L/P e mantenha em carteira por um ano;
+				<li>Repita todo mês.
+			</ol>
+		<p>Essas três regras simples, usando somente um indicador muito popular e sem nenhuma combinação mais refinada, já te dariam um desempenho muito melhor que o índice, na média, e com certeza melhor do que a esmagadora maioria dos investidores profissionais. Não significa que ela ganha todos os meses do índice (e pode, inclusive, ficar vários meses perdendo), mas a estatística é implacável; no longo prazo, o ganhador é claro.</p>
+		<p>A ideia é maravilhosamente simples, mas para construir e testar estratégias com desempenho alto e risco controlado, é necessário algum conhecimento de economia, al´em de uma pequena dose de psicologia e uma pesada dose de análise de dados, que invariavelmente está associado à programação. Caso você seja um entusiasta dessas áreas, assim como eu, provavelmente ficou ainda mais animado. Porém, se a única programação em que você está interessado é a do seu canal de TV favorito, não tema: estamos aqui para isso.</p>
+		<p>A sua parte como investidor quantitativo pode ser somente entender a proposta da estratégia, entender os riscos envolvidos e ter certeza de que você vai <strong>SEGUIR A ESTRATÉGIA</strong>, continuar com ela mesmo que ela tenha períodos em que perde para o mercado, pois os números estão ao seu lado. E essa pode não ser uma tarefa muito fácil pois é difícil desassociar dinheiro de emoções e continuar com uma estratégia depois de um período de underperformance.</p>
+		</article>
+		<article>
+			<h1>A estratégia Fator Duplo</h1>
+			<p>Depois de estudar, pesquisar e programar muito, cheguei em uma estratégia que me satisfez.</p>
+			<p>A estratégia chamada "Fator Duplo" consiste em juntar duas abordagens conhecidas e complementares: o <em>valuation</em> e o <em>price momentum</em>.</p>
+			<p>A parte de <em>valuation</em> consiste em analisar 3 indicadores fundamentalistas: Preço sobre Lucro; EV sobre EBITDA; e Preço sobre Vendas. Esses três indicaodres, separadamente, provam-se estratégias quantitativas muito boas, vencendo o mercado consistentemente por anos. Ao combinar os 3 em um único fator, chamado <strong>Fator Valor</strong>, criamos um indicador composto por 3 outros que tentam medir a mesma verdade: se uma empresa está barata ou não. Ao combinar 3 pontos de vista diferentes sobre a mesma verdade, conseguimos uma resposta mais robusta, que nos backtestes se traduz em uma média de retornos maior associado a um Sharpe também maior.
+			<p>A segunda parte consiste em avaliar o <em>price momentum</em>, ou seja, estudar o comportamento histórico dos preços. Vários estudos quantitativos indicam algo que pode ser contraintuitivo para a maioria dos investidores profissionais: comprar ações que mais subiram é um investimento melhor do que comprar as ações que mais caíram (concordando com um dos famosos bordões de Wall Street: don't fight the tape). Esse comportamento é consistente e observado em mercados de vários países, principalmente porque a sua raiz está na psicologia humana e como o nosso cérebro responde às oscilações do mercado. Indicadores distintos de momento são combinados em um único indicador composto, que também tenta medir o mesmo comportamento a partir de pontos de vista diferentes, criando o chamado <strong>Fator Momento</strong>.</p>
+			<p>A estratégia Fator Duplo se utiliza basicamente desses dois fatores e procura empresas que estejam baratas e subindo, evitando os chamados <em>value traps</em> (pois há momento associado ao valor) e evitando comprar uma bolha só porque está subindo (pois há valor associado ao momento).</p>
+		<h1>Fator Duplo: o backteste</h1>
+			<p>Para saber o que esperar de uma estratégia, devemos fazer um backteste, ou seja, ver como aquela estratégia teria desempenhado no passado. Para isso, usa-se uma base de dados histórica.</p>
+			<p>No geral, testa-se as estratégias na base de dados dos EUA por alguns motivos: é a maior base que temos, tanto em número de papeis como em tempo desde quanto está negociando (alguns dados vão até 1927!!!) e são dados mais fáceis de se acessar.Sabemos que os números não serão iguais ao aplicar essa estratégia no Brasil, mas se ela foi bem contruída, espera-se que ela retorne bons resultados aqui também (ou em qualquer outro lugar).</p>
+			<p>Para esse teste, usamos os dados de 02/09/1997 até 16/12/2021. Nos concentramos em apenas 60% do mercado por tamanho para excluir as microcaps e outros papeis que podem ter problemas de liquidez (deixando claro: não há nada de errado em small e microcaps se você consegue investir nelas. Elas são retiradas por um <a href='#'>motivo teórico</a> apenas. Aplicamos as nossas regras todos os meses, comprando as 12 que tiverem sido selecionadas e vendendo caso tenhamos um papel que não foi mais selecionado ou caso algum papel tenha subido 30% no mês (stop-gain).</p>
+			<p>Alguns dos dados a seguir podem ser estranhos para você e alguns indicadores talvez você nunca tenha ouvido falar. Dê uma olhada na seção de <a href='#'>estatística quant</a> se tiver alguma dúvida.</p>
+		<table>
+		</table>
+		<table>
+		</table>
+		</article>
+	</body>
+</html>
